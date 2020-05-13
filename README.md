@@ -13,9 +13,10 @@ Here I leave attached the materials that helped me in get all that I needed for 
 
 - COOLL dataset : https://coolldataset.github.io/
 - Classification algorithms : https://github.com/rasbt/python-machine-learning-book-3rd-edition
+- VI trajectories features : https://github.com/brunamulinari/V-I_trajectory
 - A. L. Wang, B. X. Chen, C. G. Wang, and D. D. Hua, "Non-intrusive load monitoring algorithm based on features of V–I trajectory" Electric Power Systems Research, 2018.
 - MULINARI, B. M., CAMPOS, D. P., COSTA, C. H., ANCELMO, H. C., LAZZARETTI, A. E., OROSKI, E., LIMA, C. R. E., RENAUX, D. P. B., POTTKER, F., LINHARES, R. R. "A New Set of Steady-State and Transient Features for Power Signature Analysis Based on V-I Trajectory". Accepted in: IEEE PES Innovative Smart Grid Technology Latin America, 2019. 
-- VI trajectories features : https://github.com/brunamulinari/V-I_trajectory
+
 
 ## Questions & Suggestions
 For any doubt, question or suggestion, please feel free to email at:
