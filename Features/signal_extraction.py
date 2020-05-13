@@ -1,8 +1,14 @@
 # this type of extraction takes into account that all the signals are provided as audiofiles.flac
 # voltage and current scale factors are employed to recover the real amplitude of all 840 measurements
 
+import re
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from glob import glob
+import soundfile as sf #special library to read and manipulate audio files
 
-
+#%%
 def loadfiles(current_audiofiles,voltage_audiofiles,c_scalef,v_scalef):
     
     current=[]
@@ -31,33 +37,33 @@ def loadfiles(current_audiofiles,voltage_audiofiles,c_scalef,v_scalef):
     return current,voltage,time,freq
 
 
+#%%
+#this function is used to change the sort from 'ASCIIBetical' to numeric by isolating the number in the filename
 
+def keyFunc(afilename):
+    nondigits = re.compile("\D")
+    return int(nondigits.sub("", afilename))
 
 
 #%%
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from glob import glob
-import soundfile as sf #special library to read and manipulate audio files
-
-
 #set directory for source files
 
-data_dir1=r"path\of\file\Current"
-current_files= glob(data_dir1+'/*.flac') # /* reads all the value with extention .flac
+data_dir1=r"your\file\path\Current"
+current_files= sorted(glob(data_dir1+'/*.flac'), key=keyFunc)
 
-data_dir2=r"path\of\file\Voltage"
-voltage_files= glob(data_dir2+'/*.flac')
+data_dir2=r"your\file\path\Voltage"
+voltage_files= sorted(glob(data_dir2+'/*.flac'), key=keyFunc)
 
-df=pd.read_excel(r"path\to\scale_factors.xlsx")
+df=pd.read_excel(r"path\to\scalefactors.xlsx")
 
 
 
 
 #%%
 #read audiofiles and create the time array
-c_scale=np.array(df.iloc[:,0],dtype='float32')
-v_scale=np.array(df.iloc[:,1],dtype='float32')
+c_scale=np.array(df.iloc[:,2],dtype='float32')
+v_scale=np.array(df.iloc[:,3],dtype='float32')
 
 current,voltage,time, sampling_frequency=loadfiles(current_files,voltage_files,c_scale,v_scale)
+
+
