@@ -6,15 +6,15 @@
 
 import numpy as np
 
-md=[]
+md = []
 
 for i in np.arange(len(c_cycle)):
-    dist=[]
+    dist = []
     for j in np.arange(len(c_cycle[i])):
         dist.append(np.linalg.norm([v_cycle[i][j],c_cycle[i][j]]))
     md.append(max(dist))
     
-md=np.array(md)
+md = np.array(md)
 
 
 
