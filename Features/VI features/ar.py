@@ -11,14 +11,12 @@
 
 import numpy as np
 
-area_=[]
+area_ = []
 
 for i in np.arange(len(c_cycle)):
-    area_.append(polygonArea(v_cycle[i],
-                            c_cycle[i],
-                            len(c_cycle[i])))
+    area_.append(polygonArea(v_cycle[i], c_cycle[i],len(c_cycle[i])))
     
-area_=np.array(area_)
+area_ = np.array(area_)
 
 
 # c_cycle : vector whose elements are periods of the current signals analysed
