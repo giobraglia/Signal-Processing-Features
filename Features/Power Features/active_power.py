@@ -3,7 +3,7 @@
 
 import np as numpy
 
-P=[]
+P = []
 for i in np.arange(len(power)):
     P.append(np.mean(power[i,:]))
     
