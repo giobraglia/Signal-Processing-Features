@@ -19,8 +19,9 @@ Here I leave attached the materials that helped me in get all that I needed for 
 
 ## Folders
 
-- **Features/_Common Features_** : most common and used features that can be extrapolated from a signal (power signals will be used here)
-- **Features/_VI trajectories_** : few features relative to VI trajectory analysis
+- **Features/_Common Features_** : most common and used features that can be extrapolated from a signal (power signals will be used here) ;
+- **Features/_VI trajectories_** : few features relative to VI trajectory analysis ;
+- **Features/_Power Features_** : algorithms relative to the computation of active, reactive and apparent power .
 
 ## Questions & Suggestions
 For any doubt, question or suggestion, please feel free to email at:
