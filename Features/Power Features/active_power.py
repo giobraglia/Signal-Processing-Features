@@ -3,10 +3,10 @@
 
 import np as numpy
 
-active_power=[]
+P=[]
 for i in np.arange(len(power)):
-    active_power.append(np.mean(power[i,:]))
+    P.append(np.mean(power[i,:]))
     
-active_power=np.array(active_power)
+P = np.array(active_power)
 
 # power : vector containings power signals
