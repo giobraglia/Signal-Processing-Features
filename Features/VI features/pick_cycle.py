@@ -14,30 +14,30 @@ from scipy.signal import find_peaks
 #%%
 #STEP 1 & 2
 
-current_cycle=[]
-voltage_cycle=[]
+current_cycle = []
+voltage_cycle = []
 
 for i in np.arange(len(current)):
    current_cycle.append(moving_average(current[i,0][300000:309000],140)) 
    voltage_cycle.append(moving_average(voltage[i,0][300000:309000],140))
 
    
-current_cycle=np.array(current_cycle)
-voltage_cycle=np.array(voltage_cycle)
+current_cycle = np.array(current_cycle)
+voltage_cycle = np.array(voltage_cycle)
 
 #%%
 #STEP 3 
 
-c_cycle=[]
-v_cycle=[]
+c_cycle = []
+v_cycle = []
 
 for i in np.arange(len(current_cycle)):
-  max_,_=find_peaks(voltage_cycle[i],distance=1400)
+  max_, _ = find_peaks(voltage_cycle[i],distance=1400)
   c_cycle.append(current_cycle[i,max_[1]:max_[2]])
   v_cycle.append(voltage_cycle[i,max_[1]:max_[2]])
 
-c_cycle=np.array(c_cycle)
-v_cycle=np.array(v_cycle)
+c_cycle = np.array(c_cycle)
+v_cycle = np.array(v_cycle)
 
 
 # all the numeric data inserted into the algorithm are given as an example ; in particular (as you can see in
