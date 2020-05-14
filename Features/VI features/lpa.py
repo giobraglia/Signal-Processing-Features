@@ -6,12 +6,12 @@
 
 import numpy as np
 
-lpa=[]
+lpa = []
 
 for i in np.arange(len(current_cycle)):
     lpa.append(np.sum(0.5*(v_cycle[i][1:-1]-v_cycle[i][0:-2])*(c_cycle[i][1:-1]-c_cycle[i][0:-2])))
 
-lpa=np.array(lpa)
+lpa = np.array(lpa)
 
 # c_cycle : vector whose elements are periods of the current signals analysed
 # v_cycle : vector whose elements are periods of the voltage signals analysed
