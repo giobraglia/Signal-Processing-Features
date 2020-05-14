@@ -1,6 +1,4 @@
 # Calculates the reactive power of a power signal
-# For the computation of the root mean square vectors Irms and Vrsm (relative to current and voltage)
-# just step back to apparent_power.py
 #
 # This feature is calculated by simply exploiting the trigonometry relation that link the active, reactive and
 # apparent power, i.e. Q = S * sin (theta) , theta = angle between P and Q.
