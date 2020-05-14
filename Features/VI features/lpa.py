@@ -4,6 +4,7 @@
 # A. L. Wang, B. X. Chen, C. G. Wang, and D. D. Hua, "Non-intrusive load monitoring algorithm based on features 
 # of V–I trajectory" Electric Power Systems Research, 2018.
 
+import numpy as np
 
 lpa=[]
 
