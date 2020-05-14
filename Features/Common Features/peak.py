@@ -2,10 +2,10 @@
 
 import numpy as np
 
-peak=[]
+peak = []
 for i in np.arange(len(power)):
     peak.append(np.max(power[i,:]))
 
-peak=np.array(peak)
+peak = np.array(peak)
 
 # power : vector containings power signals
