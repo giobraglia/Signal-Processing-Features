@@ -6,6 +6,8 @@
 # signals.
 
 # This feature come from : 
+# A. L. Wang, B. X. Chen, C. G. Wang, and D. D. Hua, "Non-intrusive load monitoring algorithm based on features 
+# of V–I trajectory" Electric Power Systems Research, 2018.
 
 
 area_=[]
@@ -20,4 +22,4 @@ area_=np.array(area_)
 
 # c_cycle : vector whose elements are periods of the current signals analysed
 # v_cycle : vector whose elements are periods of the voltage signals analysed
-# (see 
+# (see pick_cycle.py)
