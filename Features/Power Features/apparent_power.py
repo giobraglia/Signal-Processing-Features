@@ -4,19 +4,19 @@
 
 import numpy as np
 
-Irms=[]
-Vrms=[]
+Irms = []
+Vrms = []
 
 for i in np.arange(len(current)):
-    rmsi= np.sqrt(np.mean(current[i,0]**2))
-    rmsv= np.sqrt(np.mean(voltage[i,0]**2))
+    rmsi = np.sqrt(np.mean(current[i,0]**2))
+    rmsv = np.sqrt(np.mean(voltage[i,0]**2))
     Irms.append(rmsi)
     Vrms.append(rmsv)
     
 Irms = np.array(Irms)
 Vrms = np.array(Vrms)
 
-S= Irms*Vrms
+S = Irms*Vrms
 
 # current = vector containings current signals
 # voltage = vector containings voltage signals
