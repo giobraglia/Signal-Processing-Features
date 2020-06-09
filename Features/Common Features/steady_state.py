@@ -13,7 +13,7 @@ import numpy as np
 steady_state = []
 
 for i in np.arange(len(index_steady_begin)):
-    mean_env = np.mean(power_p_env[i][index_steady_begin[i]:index_steady_begin[i]:index_steady_end[i]])
+    mean_env = np.mean(power_p_env[i][index_steady_begin[i]:index_steady_end[i]])
     steady_state.append(mean_env)
     
 steady_state = np.array(steady_state)
