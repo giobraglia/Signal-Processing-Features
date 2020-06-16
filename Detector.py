@@ -18,7 +18,8 @@
 #           - ts = vector containings the start instants of the appliances (start of the transient)
 #           - te = vector containings the end instants of the appliances
 #           
-# In particular, in this code the function moving_average() will be exploited to smooth the signal (see 
+# In particular, in this code the function moving_average() will be exploited to smooth the signal 
+# (see Signal-Processing-Features/Features/VI features/moving_average.py ) 
 #
 
 import numpy as np
