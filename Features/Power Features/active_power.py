@@ -7,6 +7,6 @@ P = []
 for i in np.arange(len(power)):
     P.append(np.mean(power[i,:]))
     
-P = np.array(active_power)
+P = np.array(P)
 
 # power : vector containings power signals
