@@ -5,13 +5,13 @@
 import math
 import numpy as np
 
-dbp = []
+dpb = []
 
 for i in np.arange(len(c_cycle)):
     m, M = np.argmin(c_cycle[i]), np.argmax(c_cycle[i])
-    dbp.append(math.sqrt((c_cycle[i][M]-c_cycle[i][m])**2+(v_cycle[i][M]-v_cycle[i][m])**2))
+    dpb.append(math.sqrt((c_cycle[i][M]-c_cycle[i][m])**2+(v_cycle[i][M]-v_cycle[i][m])**2))
     
-dbp = np.array(dbp)
+dpb = np.array(dpb)
 
 
 # c_cycle : vector whose elements are periods of the current signals analysed
