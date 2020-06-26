@@ -15,5 +15,5 @@ lpa = np.array(lpa)
 
 # c_cycle : vector whose elements are periods of the current signals analysed
 # v_cycle : vector whose elements are periods of the voltage signals analysed
-# current_cycle = vector containings small portions of the signals analysed in steady-state
+# current_cycle : vector containings small portions of the signals analysed in steady-state
 # (see pick_cycle.py)
