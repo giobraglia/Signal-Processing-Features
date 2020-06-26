@@ -27,9 +27,9 @@ for i in np.arange(len(current)):
     
 span = np.array(span)
 
-# current = vector containings current signals
-# current_cycle = vector containings small portions of the signals analysed in steady-state
-# c_cycle
+# current : vector containings current signals
+# current_cycle : vector containings small portions of the signals analysed in steady-state
+# c_cycle : vector whose elements are periods of the current signals analysed
 # (see pick_cycle.py)
 
 
