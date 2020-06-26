@@ -5,16 +5,16 @@
 
 import numpy as np
 
-len = []
+len_ = []
 
 for i in np.arange(len(c_cycle)):
     lenght = 0
     for j in np.arange(len(c_cycle[i])-1):
         lenght += math.sqrt((c_cycle[i][j+1]-c_cycle[i][j])**2+(v_cycle[i][j+1]-v_cycle[i][j])**2)
         
-    len.append(lenght)
+    len_.append(lenght)
     
-len = np.array(len)
+len_ = np.array(len_)
 
 
 # c_cycle : vector whose elements are periods of the current signals analysed
