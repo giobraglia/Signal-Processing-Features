@@ -3,7 +3,9 @@
 # a supply power at 50 Hz, therefore I founded empirically that the most relevant harmonics
 # was from 0 to 2400 Hz with a step of 200 Hz and this is because I'm going to calculate FFT over
 # a signal made of 200000 samples ( with a signal of 140000 samples I would find relevant components 
-# by using a step of 140 Hz for example) .
+# by using a step of 140 Hz for example) : as matter of fact, in this dataset the sampling frequency is 100 kHz .
+
+
 
 import numpy as np
 
