@@ -38,4 +38,5 @@ def buffer (t_start,t_end,c_signal,v_signal, part, n_cycles = 20):   # part == '
     
     
 # note that at the end the signal are smoothed through the moving_average filter in a way to obtain better features
-# (see 
+# (see Signal-Processing-Features/Features/VI features/moving_average.py )
+
