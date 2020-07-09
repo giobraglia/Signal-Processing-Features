@@ -33,13 +33,14 @@ def detector(signal, window, threshold):
     te = []  # turn-off instants
     
     #create envelope of signal
-    peak , _ = find_peaks(np.abs(signal),distance=2000) 
-    env = moving_average(np.abs(signal[peak]),2)
+    peak , _ = find_peaks(np.abs(signal),distance=2000)           # distance = 2000 was taken because each signal
+    env = moving_average(np.abs(signal[peak]),2)                  # analysed had a period of 2000 samples
     env = np.array(env)
     
     
     signal_std = np.zeros(len(env))
     signal_mean = np.zeros(len(env))
+    
     #initialize variance and mean vector
     signal_std[0:window] = np.std(env[0:window])
     signal_mean[0:window] = np.mean(env[0:window])
@@ -53,17 +54,21 @@ def detector(signal, window, threshold):
     std_grad = np.gradient(signal_std) 
     env_grad = np.gradient(env)
     
+    
     #find ts and te instants
     for i in np.arange(0,len(env)):
-        if signal_std[i] > threshold and std_grad[i] > 0 and temp == 0:
+        
+        if ( signal_std[i] > threshold and std_grad[i] > 0 and env_grad[i] > 0 and temp == 0 ) : 
             temp = 1
-            if env_grad[i] > 0 :
-                ts.append(i)
-            else:
-                te.append(i)
-                
-        if signal_std[i] > threshold and std_grad[i]<0 :
+            ts.append([i,peak[i]])
+            
+        if ( signal_std[i] < threshold and std_grad[i] < 0 and temp == 1 ) :            
+            te.append([i,peak[i]])           
             temp = 0
+            
+    # i = index of the event on the envelope signal
+    # peak[i] = index of the event in the original signal
+
     
     ts = np.array(ts)
     te = np.array(te)
