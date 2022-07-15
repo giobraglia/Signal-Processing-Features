@@ -8,8 +8,10 @@ The features presented was calculated to build up a dataset that has been employ
 To extract and collecting data the used software was Python. In particular all the signals analyzed come from the COOLL dataset, therefore in the code snippets will be always used power, current or voltage signals (but actually codes can be implemented over any kind of signal).
 
 If your intentions are to use this repository, please cite and refer to:
-G.Braglia, A.E. Lazzaretti, "An Embedded System for NILM using Machine Learning", Congresso Brasileiro de Inteligência Computacional, 2021.
-Full-text available on ResearchGate
+G.Braglia, A.E. Lazzaretti, "An Embedded System for NILM using Machine Learning", XV Brazilian Congress on Computational Intelligence, 2021.
+
+Full-text available on ResearchGate at
+https://www.researchgate.net/publication/356092329_An_Embedded_System_for_NILM_Using_Machine_Learning
 
 ## Important Resources
 
