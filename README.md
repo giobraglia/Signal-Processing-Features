@@ -7,6 +7,10 @@ All the presented codes are really simple algorithms that can helps in extractin
 The features presented was calculated to build up a dataset that has been employed for classification purposes in NILM ( non-intrusive load monitoring ).
 To extract and collecting data the used software was Python. In particular all the signals analyzed come from the COOLL dataset, therefore in the code snippets will be always used power, current or voltage signals (but actually codes can be implemented over any kind of signal).
 
+If your intentions are to use this repository, please cite and refer to:
+G.Braglia, A.E. Lazzaretti, "An Embedded System for NILM using Machine Learning", Congresso Brasileiro de Inteligência Computacional, 2021.
+Full-text available on ResearchGate
+
 ## Important Resources
 
 Here I leave attached the materials that helped me in get all that I needed for this project.
@@ -25,7 +29,7 @@ Here I leave attached the materials that helped me in get all that I needed for 
 
 ## Questions & Suggestions
 For any doubt, question or suggestion, please feel free to email at:
-giovanni.braglia97@gmail.com
+giovanni.braglia@unimore.it
 
 
 
