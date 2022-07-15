@@ -10,7 +10,7 @@ To extract and collecting data the used software was Python. In particular all t
 If your intentions are to use this repository, please cite and refer to:
 G.Braglia, A.E. Lazzaretti, "An Embedded System for NILM using Machine Learning", XV Brazilian Congress on Computational Intelligence, 2021.
 
-Full-text available on ResearchGate at
+Full-text available on ResearchGate at:
 https://www.researchgate.net/publication/356092329_An_Embedded_System_for_NILM_Using_Machine_Learning
 
 ## Important Resources
