@@ -1,0 +1,10 @@
+cff-version: 1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Braglia"
+  given-names: "Giovanni"
+  orcid: "https://orcid.org/0000-0002-2230-8191"
+title: "Signal-Processing-Features"
+version: 1.0.0
+date-released: 2022-07-26
+url: "https://github.com/giobraglia/Signal-Processing-Features"
